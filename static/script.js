@@ -16,6 +16,8 @@ function initializeEventListeners() {
             selectedX = parseFloat(this.dataset.value);
             document.getElementById('x-value').value = selectedX;
             updateCurrentParams();
+            drawGraph();
+            drawCurrentPoint();
         });
     });
 
@@ -23,14 +25,27 @@ function initializeEventListeners() {
     yInput.addEventListener('input', function() {
         validateY();
         updateCurrentParams();
+        drawGraph();
+        drawCurrentPoint();
     });
 
     const rRadios = document.querySelectorAll('input[name="r"]');
     rRadios.forEach(radio => {
         radio.addEventListener('change', function() {
+            // Убираем класс selected со всех radio-label
+            document.querySelectorAll('.radio-label').forEach(label => {
+                label.classList.remove('selected');
+            });
+
+            // Добавляем класс к выбранному
+            if (this.checked) {
+                this.closest('.radio-label').classList.add('selected');
+            }
+
             currentR = parseFloat(this.value);
             updateCurrentParams();
             drawGraph();
+            drawCurrentPoint();
         });
     });
 
@@ -271,6 +286,39 @@ function drawGraph() {
     ctx.font = 'bold 14px Arial';
     ctx.fillText('X', width - 15, centerY - 15);
     ctx.fillText('Y', centerX - 20, 10);
+}
+
+// Функция для отображения точки на графике в реальном времени
+function drawCurrentPoint() {
+    if (selectedX !== null && currentR !== null) {
+        const yInput = document.getElementById('y-input');
+        const yValue = yInput.value.trim();
+
+        if (yValue !== '' && !isNaN(parseFloat(yValue))) {
+            const y = parseFloat(yValue);
+            if (y >= -3 && y <= 5) {
+                const canvas = document.getElementById('graph');
+                const ctx = canvas.getContext('2d');
+                const centerX = canvas.width / 2;
+                const centerY = canvas.height / 2;
+                const scale = 60;
+
+                // Вычисляем позицию точки на графике
+                const pointX = centerX + selectedX * scale;
+                const pointY = centerY - y * scale;
+
+                // Рисуем точку красным цветом
+                ctx.fillStyle = '#e53e3e';
+                ctx.strokeStyle = '#c53030';
+                ctx.lineWidth = 2;
+
+                ctx.beginPath();
+                ctx.arc(pointX, pointY, 6, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.stroke();
+            }
+        }
+    }
 }
 
 function drawPoint(x, y, hit) {
