@@ -18,7 +18,7 @@ dependencies {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'ru.rmntim.web.Main'
+                'Main-Class': 'ru.rmntim.Main'
         )
     }
     from {
@@ -28,4 +28,9 @@ jar {
 }
 test {
     useJUnitPlatform()
+}
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }
