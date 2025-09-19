@@ -1,0 +1,17 @@
+[Wed Sep 17 21:33:51.954228 2025] [fastcgi:error] [pid 35415] (13)Permission denied: FastCGI: doesn't exist and can't be created: Permission denied
+[Wed Sep 17 21:33:51.954265 2025] [fastcgi:error] [pid 35415] (2)No such file or directory: FastCGI: can't create dynamic directory "/var/run/fastcgi/dynamic": doesn't exist and can't be created: No such file or directory
+[Wed Sep 17 21:33:51.988382 2025] [ssl:warn] [pid 35416] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed Sep 17 21:33:52.007961 2025] [fastcgi:error] [pid 35416] (13)Permission denied: FastCGI: doesn't exist and can't be created: Permission denied
+[Wed Sep 17 21:33:52.008053 2025] [fastcgi:error] [pid 35416] (2)No such file or directory: FastCGI: can't create dynamic directory "/var/run/fastcgi/dynamic": doesn't exist and can't be created: No such file or directory
+[Wed Sep 17 21:33:52.009542 2025] [:notice] [pid 35417] FastCGI: process manager initialized (pid 35417)
+[Wed Sep 17 21:33:52.012632 2025] [mpm_prefork:notice] [pid 35416] AH00163: Apache/2.4.62 (FreeBSD) OpenSSL/3.0.16 PHP/8.2.22 mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Wed Sep 17 21:33:52.012691 2025] [core:notice] [pid 35416] AH00094: Command line: 'httpd -f /home/studs/s434931/web/lab1/httpd-root/conf/httpd.conf'
+[Wed Sep 17 21:42:31.543499 2025] [mpm_prefork:notice] [pid 35416] AH00169: caught SIGTERM, shutting down
+[Wed Sep 17 21:42:42.551474 2025] [fastcgi:error] [pid 36995] (13)Permission denied: FastCGI: doesn't exist and can't be created: Permission denied
+[Wed Sep 17 21:42:42.551526 2025] [fastcgi:error] [pid 36995] (2)No such file or directory: FastCGI: can't create dynamic directory "/var/run/fastcgi/dynamic": doesn't exist and can't be created: No such file or directory
+[Wed Sep 17 21:42:42.591032 2025] [ssl:warn] [pid 36996] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed Sep 17 21:42:42.609441 2025] [fastcgi:error] [pid 36996] (13)Permission denied: FastCGI: doesn't exist and can't be created: Permission denied
+[Wed Sep 17 21:42:42.609516 2025] [fastcgi:error] [pid 36996] (2)No such file or directory: FastCGI: can't create dynamic directory "/var/run/fastcgi/dynamic": doesn't exist and can't be created: No such file or directory
+[Wed Sep 17 21:42:42.610908 2025] [:notice] [pid 36997] FastCGI: process manager initialized (pid 36997)
+[Wed Sep 17 21:42:42.614033 2025] [mpm_prefork:notice] [pid 36996] AH00163: Apache/2.4.62 (FreeBSD) OpenSSL/3.0.16 PHP/8.2.22 mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Wed Sep 17 21:42:42.614101 2025] [core:notice] [pid 36996] AH00094: Command line: 'httpd -f /home/studs/s434931/web/lab1/httpd-root/conf/httpd.conf'

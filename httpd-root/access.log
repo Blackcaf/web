@@ -1,0 +1,6 @@
+127.0.0.1 - - [17/Sep/2025:21:59:08 +0300] "GET / HTTP/1.1" 200 4377 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+127.0.0.1 - - [17/Sep/2025:21:59:08 +0300] "GET /script.js HTTP/1.1" 200 11212 "http://localhost:25341/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+127.0.0.1 - - [17/Sep/2025:21:59:08 +0300] "GET /styles.css HTTP/1.1" 200 6605 "http://localhost:25341/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+127.0.0.1 - - [17/Sep/2025:21:59:08 +0300] "GET /fcgi-bin/hello-world.jar?action=history HTTP/1.1" 404 196 "http://localhost:25341/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+127.0.0.1 - - [17/Sep/2025:21:59:08 +0300] "GET /favicon.ico HTTP/1.1" 404 196 "http://localhost:25341/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+127.0.0.1 - - [17/Sep/2025:21:59:15 +0300] "POST /fcgi-bin/hello-world.jar HTTP/1.1" 404 196 "http://localhost:25341/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
